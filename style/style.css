@@ -5,6 +5,17 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
+*::-webkit-scrollbar {
+    width: 9px; /* ширина для вертикального скролла */
+    height: 9px; /* высота для горизонтального скролла */
+    background-color: #827261;
+}
+
+/* ползунок скроллбара */
+*::-webkit-scrollbar-thumb {
+    background-color: #CFF69B;
+    border-radius: 9em;
+}
 .container {
     display: block;
     max-width: 1500px;
@@ -14,4 +25,5 @@
 .row-content {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
