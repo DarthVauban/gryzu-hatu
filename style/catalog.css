@@ -198,3 +198,13 @@
     border-radius: 10px;
     cursor: pointer;
 }
+.social-icons {
+    margin-top: 17px;
+}
+.insta-icon {
+    margin-right: 20px;
+    cursor: pointer;
+}
+.facebok-icon {
+    cursor: pointer;
+}
