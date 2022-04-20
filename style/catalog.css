@@ -338,14 +338,21 @@
     margin-bottom: 8px;
 }
 /* noUiSlider styles */
-.noUi-tooltip {
-    display: none;
-}
-.noUi-active .noUi-tooltip {
-    display: block;
-}
+
 .noUi-connect {
-    background: #c0392b;
+    background: #CFF69B;
+    border: none;
+}
+
+.noUi-touch-area {
+    width: 15px;
+    height: 15px;
+    background-color: #827261;
+}
+.noUi-horizontal .noUi-handle  {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
 }
 
 /* range slider */
