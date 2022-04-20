@@ -71,9 +71,8 @@
     max-width: 258px;
     width: 100%;
     align-items: center;
-    border-radius: 37px;
+    border-radius: 15px;
     padding: 24px 16px;
-
 }
 .card-container:hover {
     -webkit-box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.1);
@@ -218,12 +217,20 @@
     color:#827261;
     font-size: 18px;
     margin: 0;
-    margin-right: 10px;
 }
 .amount {
     font-size: 10px;
     color: #A6A5A5;
     margin: 0;
+}
+.filter-block {
+    border-top: 1px solid #DEDEDE;
+    border-right: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+    padding-top: 15px;
+}
+.filter-block:last-child {
+    border-bottom: none;
 }
 .filter-item {
     margin-top: 15px;
@@ -241,11 +248,7 @@
 .filters-label {
     display: flex;
     flex-direction: column;
-    border-top: 1px solid #DEDEDE;
-    border-right: 1px solid #DEDEDE;
-    border-bottom: 1px solid #DEDEDE;
     padding: 15px 0px;
-    margin-top: 15px;
     margin-bottom: 15px;
 }
 .checkbox {
@@ -345,14 +348,59 @@
 }
 
 .noUi-touch-area {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     background-color: #827261;
+    border-radius: 3px;
 }
 .noUi-horizontal .noUi-handle  {
     background-color: transparent;
     box-shadow: none;
     border: none;
+    width: 0px;
+    height: 0px;
 }
-
+.noUi-horizontal .noUi-handle {
+    width: 20px;
+    height: 20px;
+    top: -9px;
+}
+.noUi-handle:before, .noUi-handle:after {
+    display: none;
+}
+#slider {
+ max-width: 190px;
+ width: 100%;
+}
 /* range slider */
+.price-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.price-filter-input {
+    width: 30px;
+    padding: 5px 10px;
+    color: #000 !important;
+}
+.price-filter .spacer {
+    width: 17px;
+    height: 1px;
+    background-color: #827261;
+    display: block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.price-filter-btn {
+    border: none;
+    background: #827261;
+    color: #CFF69B;
+    padding: 6.5px 12px;
+    border-radius: 3px;
+    margin-left: 12px;
+}
+.price-filter-input::placeholder {
+    color: #000 !important ;
+    font-family: 'Montserrat';
+}
