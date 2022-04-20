@@ -230,8 +230,24 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
 }
-
+.filters-label {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #DEDEDE;
+    border-right: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+    padding: 15px 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 .checkbox {
     display: none;
 }
@@ -262,8 +278,10 @@
 }
 .fake::after {
     content: "";
-    background: "../img/chek.svg";
+    background: url("../img/chek.svg");
     position: absolute;
+    width: 13px;
+    height: 13px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -276,10 +294,58 @@
 .checkbox:checked + .fake::after {
     opacity: 1;
 }
-
-
 .filter-text {
     font-size: 15px;
     margin-right: 11px;
     margin-left: 12px;
 }
+.filter-item:first-child {
+    margin: 0;
+}
+
+/* Range slider */
+
+#form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 202px;
+    padding: 20px;
+}
+.bar {
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+.flex {
+    display: flex;
+}
+.button {
+    background: #CFF69B;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: auto;
+    cursor: pointer;
+    transition: .3s;
+}
+.button:hover {
+    background: #CFF69B;
+}
+.label {
+    color: #777777;
+    margin-bottom: 8px;
+}
+/* noUiSlider styles */
+.noUi-tooltip {
+    display: none;
+}
+.noUi-active .noUi-tooltip {
+    display: block;
+}
+.noUi-connect {
+    background: #c0392b;
+}
+
+/* range slider */
