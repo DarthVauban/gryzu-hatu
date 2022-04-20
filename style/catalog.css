@@ -34,6 +34,8 @@
     cursor: pointer;
 }
 .main-content .container .filters {
+    display: flex;
+    flex-direction: column;
     width: 220px;
     height: 750px;
 }
@@ -207,4 +209,77 @@
 }
 .facebok-icon {
     cursor: pointer;
+}
+.category {
+    display: flex;
+    align-items: center;
+}
+.categiry-item {
+    color:#827261;
+    font-size: 18px;
+    margin: 0;
+    margin-right: 10px;
+}
+.amount {
+    font-size: 10px;
+    color: #A6A5A5;
+    margin: 0;
+}
+.filter-item {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox {
+    display: none;
+}
+.fake {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 1px solid #827261;
+    position: relative;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.fake::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #CFF69B;
+    opacity: 0;
+    border-radius: 1px;
+    transition: 0.2s;
+}
+.fake::after {
+    content: "";
+    background: "../img/chek.svg";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.checkbox:checked + .fake::before,
+.checkbox:checked + .fake::after {
+    opacity: 1;
+}
+
+
+.filter-text {
+    font-size: 15px;
+    margin-right: 11px;
+    margin-left: 12px;
 }
