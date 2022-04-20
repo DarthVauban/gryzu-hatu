@@ -184,7 +184,7 @@
     border: 1px solid #CFF69B;
     outline: none;
 }
-::placeholder {
+.email-input::placeholder {
     font-family: 'Adigiana2';
     color: #000;
     opacity: 0.3;
@@ -383,6 +383,7 @@
     width: 30px;
     padding: 5px 10px;
     color: #000 !important;
+    outline: none;
 }
 .price-filter .spacer {
     width: 17px;
@@ -399,6 +400,7 @@
     padding: 6.5px 12px;
     border-radius: 3px;
     margin-left: 12px;
+    cursor: pointer;
 }
 .price-filter-input::placeholder {
     color: #000 !important ;
