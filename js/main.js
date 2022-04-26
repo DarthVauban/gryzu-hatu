@@ -1,3 +1,9 @@
+const burgerMenu = document.querySelector('.menu-icon')
+const mobileMenu = document.querySelector('.mobile-menu')
+const overlayMobile = document.querySelector('.mobile-menu-overlay')
+const filterButton = document.querySelector('.filter-btn')
+const mobileFilters = document.querySelector('.mob-filters')
+
 var slider = document.getElementById('slider');
 
 noUiSlider.create(slider, {
@@ -8,3 +14,18 @@ noUiSlider.create(slider, {
         'max': 100
     }
 });
+
+burgerMenu.addEventListener('click',() => {
+    mobileMenu.classList.add('mobile-menu-active')
+    overlayMobile.style.display = 'block'
+})
+
+overlayMobile.addEventListener('click', () => {
+    mobileMenu.classList.remove('mobile-menu-active')
+    overlayMobile.style.display = 'none'
+})
+
+filterButton.addEventListener('click',() => {
+    mobileMenu.classList.add('mob-filters-active')
+    overlayMobile.style.display = 'block'
+})
