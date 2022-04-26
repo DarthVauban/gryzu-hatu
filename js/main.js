@@ -21,11 +21,17 @@ burgerMenu.addEventListener('click',() => {
 })
 
 overlayMobile.addEventListener('click', () => {
-    mobileMenu.classList.remove('mobile-menu-active')
+    if (mobileMenu.classList.contains ('mobile-menu-active')) {
+        mobileMenu.classList.remove('mobile-menu-active')
+    }
+    if (mobileFilters.classList.contains('mob-filters-active')) {
+        mobileFilters.classList.remove('mob-filters-active')
+    }
     overlayMobile.style.display = 'none'
 })
 
-filterButton.addEventListener('click',() => {
-    mobileMenu.classList.add('mob-filters-active')
+filterButton.addEventListener('click',(event) => {
+    event.preventDefault()
+    mobileFilters.classList.add('mob-filters-active')
     overlayMobile.style.display = 'block'
 })

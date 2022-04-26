@@ -5,7 +5,7 @@
 }
 /* mobile menu */
 .mobile-header {
-    display: none;
+    display: block;
 }
 .mobile-logo {
     width: 65px;
@@ -141,7 +141,7 @@
     align-items: center;
 }
 .filter-btn {
-    display: none;
+    display: flex;
     align-items: center;
     text-decoration: none;
     background-color: #827261;
@@ -521,8 +521,10 @@
     max-width: 412px;
     width: 100%;
     position: absolute;
+    background: #fff;
     top: 0;
     left: -500px;
+    z-index: 5;
 }
 .mob-filters-active {
     display: flex;
