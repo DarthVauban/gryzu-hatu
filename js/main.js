@@ -3,6 +3,7 @@ const mobileMenu = document.querySelector('.mobile-menu')
 const overlayMobile = document.querySelector('.mobile-menu-overlay')
 const filterButton = document.querySelector('.filter-btn')
 const mobileFilters = document.querySelector('.mob-filters')
+const body = document.querySelector('body')
 
 var slider = document.getElementById('slider');
 
@@ -18,6 +19,7 @@ noUiSlider.create(slider, {
 burgerMenu.addEventListener('click',() => {
     mobileMenu.classList.add('mobile-menu-active')
     overlayMobile.style.display = 'block'
+    body.style.overflow = 'hidden'
 })
 
 overlayMobile.addEventListener('click', () => {
@@ -28,10 +30,12 @@ overlayMobile.addEventListener('click', () => {
         mobileFilters.classList.remove('mob-filters-active')
     }
     overlayMobile.style.display = 'none'
+    body.style.overflow = 'visible'
 })
 
 filterButton.addEventListener('click',(event) => {
     event.preventDefault()
     mobileFilters.classList.add('mob-filters-active')
     overlayMobile.style.display = 'block'
+    body.style.overflow = 'hidden'
 })

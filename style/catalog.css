@@ -49,7 +49,6 @@
     display: none;
     top: 0;
     left: 0;
-    overflow: hidden;
     z-index: 2;
 }
 .mobile-menu-items {
@@ -605,5 +604,80 @@
     }
     .card-container {
         max-width: 200px;
+    }
+    .footer-links {
+        max-width: 550px;
+    }
+}
+@media (max-width: 1001px) {
+    .card-container {
+        max-width: 150px;
+    }
+    .card-container .card-title {
+        font-size: 14px;
+    }
+    .card-container .card-descr {
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    .card-container .card-footer .price {
+        font-size: 18px;
+    }
+    .card-container .card-footer .card-btn {
+        font-size: 18px;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-links {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 761px) {
+    .card-container {
+        max-width: 235px;
+    }
+}
+@media (max-width: 581px) {
+    .card-container {
+        max-width: 175px;
+    }
+    .sorting-raw {
+        justify-content: space-between;
+    }
+    .footer-content {
+        flex-direction: column-reverse;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .footer-links {
+        flex-direction: column;
+    }
+    .links-list {
+        margin-bottom: 15px;
+    }
+    .links-list:last-child {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 461px) {
+    .card-container {
+        max-width: 130px;
+    }
+    .card-container .card-title {
+        font-size: 12px;
+    }
+    .card-container .card-descr {
+        margin-bottom: 15px;
+        font-size: 10px;
+    }
+    .email-input {
+        max-width: 150px;
+    }
+    .insta-icon {
+        width: 40px;
+    }
+    .facebok-icon {
+        width: 40px;
     }
 }
