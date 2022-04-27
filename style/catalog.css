@@ -517,7 +517,7 @@
 .mob-filters {
     display: none;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 240px;
     width: 100%;
     position: absolute;
     background: #fff;
