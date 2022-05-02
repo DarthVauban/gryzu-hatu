@@ -121,7 +121,12 @@
     cursor: pointer;
 }
 .main-screen {
-    position: relative;
+    background-image: url(../img/main-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
 .main-screen-content {
     display: flex;
@@ -233,4 +238,104 @@
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
+}
+.features {
+    position: relative;
+    margin-bottom: 50px;
+}
+.features-content {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/features-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+.features-bg {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+}
+.features-items {
+    display: flex;
+    justify-content: space-between;
+}
+.features-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 315px;
+    width: 100%;
+}
+.features-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    color: #827261;
+    text-align: center;
+}
+.features-text {
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    color: #827261;
+}
+.team {
+    display: flex;
+    justify-content: space-around;
+}
+.team-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+}
+.team-photo {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 35px
+}
+.name {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #827261;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.team-descr {
+    text-align: center;
+    font-size: 24px;
+    color: #827261;
+    margin: 0;
+}
+.for-us {
+    margin-bottom: 50px;
+}
+.reviews {
+    margin-bottom: 100px;
+    display: flex;
+}
+.review-item {
+    width: 400px;
+    height: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #827261;
+}
+.review-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width:1500px) {
+    .slider-card-btn {
+        font-size: 23px;
+    }
 }
