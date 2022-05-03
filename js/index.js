@@ -29,24 +29,25 @@ $( function() {
         slidesToScroll: 1,
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1441,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 1,
               infinite: true,
-              dots: true
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 881,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 769,
             settings: {
+              variableWidth: true,
+              centerMode: true,
               slidesToShow: 1,
               slidesToScroll: 1
             }
@@ -70,24 +71,24 @@ $( function() {
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1441,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
-            dots: true
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 881,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 769,
           settings: {
+            centerMode: true,
             slidesToShow: 1,
             slidesToScroll: 1
           }
