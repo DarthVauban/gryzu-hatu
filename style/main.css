@@ -507,3 +507,25 @@
         font-size: 30px;
     }
 }
+@media (max-width: 418px) {
+    .slider-cards,
+    .review-cards
+     {
+        max-width: 240px;
+    }
+    .slider-cards .slick-prev,
+    .review-cards .slick-prev
+     {
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        left: -50px;
+    }
+    .slider-cards .slick-next,
+    .review-cards .slick-next {
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        right: -50px;
+    }
+}
