@@ -2,3 +2,11 @@
     max-width: 683px;
     height: auto;
 }
+.slider-nav {
+    max-width: 300px;
+}
+.slider-nav .product2 {
+    max-width: 103px;
+    width: 100%;
+    height: auto;
+}
