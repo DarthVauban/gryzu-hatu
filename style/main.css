@@ -127,6 +127,7 @@
     background-position: center center;
     padding-top: 130px;
     padding-bottom: 130px;
+
 }
 .main-screen-content {
     display: flex;
@@ -463,11 +464,6 @@
     .main-screen {
         position: relative;
     }
-    .main-screen-img {
-        position: absolute;
-        width: 400px;
-        right: -20px;
-    }
     .features-content {
         margin-top: -60px;
     }
@@ -489,6 +485,13 @@
     }
 }
 @media (max-width: 421px) {
+    .main-screen {
+        padding-top: 120px;
+        padding-bottom: 0;
+    }
+    .main-screen-content {
+        flex-direction: column;
+    }
     .text__title {
         font-size: 30px;
     }
@@ -501,7 +504,7 @@
     }
     .main-screen-img {
         width: 310px;
-        bottom: -130px;
+        margin-top: -80px;
     }
     .text__title_stroke {
         font-size: 30px;
