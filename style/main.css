@@ -145,6 +145,9 @@
 .main-screen-img {
     width: 77%;
 }
+.main-screen-img-mob {
+    display: none;
+}
 .prev-img {
     display: flex;
     justify-content: end;
@@ -486,8 +489,19 @@
 }
 @media (max-width: 421px) {
     .main-screen {
-        padding-top: 120px;
-        padding-bottom: 0;
+        margin-top: 20px;
+        padding-top: 70px;
+        padding-bottom: 30px;
+        background-size: 183%;
+        background-position: -147px 10px;
+    }
+    .main-screen-img {
+        display: none;
+    }
+    .main-screen-img-mob {
+        display: block;
+        width: 310px;
+        margin-top: -80px;
     }
     .main-screen-content {
         flex-direction: column;
@@ -501,10 +515,6 @@
     .ofer-btn {
         font-size: 20px;
         padding: 14px 15px;
-    }
-    .main-screen-img {
-        width: 310px;
-        margin-top: -80px;
     }
     .text__title_stroke {
         font-size: 30px;
