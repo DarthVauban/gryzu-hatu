@@ -3,10 +3,17 @@
     height: auto;
 }
 .slider-nav {
-    max-width: 300px;
+    max-width: 683px;
 }
 .slider-nav .product2 {
     max-width: 103px;
     width: 100%;
     height: auto;
+    margin-right: 13px;
+}
+.slider-nav .product2:last-child {
+    margin-right: 0px;
+}
+.slider-nav .product2 .nav-slide {
+    width: 100%;
 }
