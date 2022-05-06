@@ -514,6 +514,15 @@
     .text__medium {
         font-size: 18px;
     }
+    .card-slider {
+        margin-top: -50px;
+    }
+    .features {
+        margin-top: -50px;
+    }
+    .for-us {
+        margin-top: -50px;
+    }
 }
 @media (max-width: 421px) {
     .main-screen {
@@ -614,4 +623,8 @@
         background-size: cover;
         right: -25px;
     }
+}
+
+@media (max-width: 321px) {
+
 }
