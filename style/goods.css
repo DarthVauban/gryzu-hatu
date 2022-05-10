@@ -33,6 +33,9 @@
     font-size: 18px;
     color: #827261;
 }
+.sorting-size {
+    display: none;
+}
 .size-label {
     display: flex;
     margin-top: 11px;
@@ -104,7 +107,7 @@
     margin-left: 12px;
 }
 .color {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .good-price {
     margin-top: 20px;
@@ -172,11 +175,13 @@
     cursor: pointer;
 }
 .purchase-icon {
-    margin-right: 10px;    
+    margin-right: 10px;   
+    width: 20px; 
 }
 .delivary-content {
     display: flex;
     justify-content: space-between;
+    margin-top: 60px;
 }
 .payment-info {
     max-width: 650px;
@@ -194,16 +199,17 @@
 .delivery-info {
     max-width: 650px;
 }
-.more-title {
-    font-size: 30px;
-    font-weight: 700;
-    color: #827261;
+.more {
+    margin-bottom: 20px;
 }
 .more-goods {
     margin-bottom: 100px;
+    margin-top: 60px;
 }
 .more-slider {
     display: flex;
+    max-width: 1320px;
+    margin: 0 auto;
 }
 .more-item {
     display: flex;
@@ -220,6 +226,7 @@
     width: 120px;
 }
 .more-goods-title {
+    margin: 0;
     font-size: 16px;
     font-weight: 700;
     color: #827261;
@@ -236,13 +243,14 @@
 .more-price {
     margin: 0;
     color: #9D8B77;
-    font-size: 17px;
+    font-size: 13px;
     font-weight: 700;
 }
 .more-btn {
     display: flex;
     align-items: center;
     border: none;
+    font-size: 14px;
     background-color: #827261;
     color: #CFF69B;
     padding: 8px 13px;
@@ -250,4 +258,286 @@
 }
 .slick-initialized .slick-slide {
     display: flex !important;
+}
+
+@media (max-width: 1440px) {
+    .more-slider {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .slider-cards-product1 {
+        max-width: 600px;
+    }
+    .big-slide {
+        max-width: 600px;
+    }
+    .slider-nav {
+        width: 600px;
+    }
+    .more-img {
+        width: 80px;
+    }
+    .good-title {
+        font-size: 24px;
+    }
+    .good-descr {
+        font-size: 16px;
+    }
+    .good-title_price {
+        font-size: 24px;
+    }
+}
+@media (max-width: 1320px) {
+    .more-slider {
+        max-width: 1000px;
+    }
+    .slider-cards-product1 {
+        max-width: 500px;
+    }
+    .big-slide {
+        max-width: 500px;
+    }
+    .slider-nav {
+        width: 500px;
+    }
+    .fake-radio {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .fake-radio::before {
+        width: 8px;
+        height: 8px;
+    }
+    .fake-radio::after {
+        width: 8px;
+        height: 8px;
+    }
+    .old-price {
+        font-size: 18px;
+    }
+    .main-price {
+        font-size: 24px;
+    }
+    .purchase-title {
+        font-size: 18px;
+    }
+    .purchase-amount {
+        font-size: 24px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .purchase-btn {
+        font-size: 24px;
+    }
+    .purchase-icon {
+        width: 24px;
+    }
+    .payment-text {
+        font-size: 14px;
+    }
+    .delivery-text {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1120px) {
+    .more-slider {
+        max-width: 900px;
+    }
+    .fake-radio {
+        width: 12px;
+        height: 12px;
+    }
+    .fake-radio::before {
+        width: 6px;
+        height: 6px;
+    }
+    .fake-radio::after {
+        width: 6px;
+        height: 6px;
+    }
+    .radio-text {
+        font-size: 14px;
+    }
+    .good-title {
+        font-size: 20px;
+    }
+    .good-descr {
+        font-size: 14px;
+    }
+    .old-price {
+        font-size: 16px;
+    }
+    .main-price {
+        font-size: 24px;
+    }
+    .payment-info {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 1080px) {
+    .goods-info {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 1030px) {
+    .slider-cards-product1 {
+        max-width: 420px;
+    }
+    .big-slide {
+        max-width: 420px;
+    }
+    .slider-nav {
+        width: 420px;
+    }
+    .more-slider {
+        max-width: 780px;
+    }
+    .size-item {
+        display: none;
+    }
+    .sorting-size {
+        display: block;
+    }
+    .info {
+        margin-left: 20px;
+    }
+    .payment-info {
+        margin-right: 10px;
+    }
+}
+@media (max-width: 900px) {
+    .goods-content {
+        flex-direction: column;
+    }
+    .info {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .more-slider {
+        max-width: 500px;
+    }
+    .slider-cards-product1 {
+        max-width: 500px;
+    }
+    .big-slide {
+        max-width: 500px;
+    }
+    .slider-nav {
+        width: 500px;
+    }
+    .delivary-content {
+        flex-direction: column;
+    }
+    .payment-info {
+        margin: 0;
+    }
+}
+@media (max-width: 620px) {
+    .more-slider {
+        max-width: 400px;
+    }
+    .more-slider .slick-prev {
+        width: 35px;
+        height: 35px;
+        background-size: cover;
+
+    }
+    .more-slider .slick-next {
+        width: 35px;
+        height: 35px;
+        background-size: cover;
+
+    }
+}
+
+@media (max-width: 520px) {
+    .slider-cards-product1 {
+        max-width: 320px;
+    }
+    .big-slide {
+        max-width: 320px;
+    }
+    .slider-nav {
+        width: 320px;
+    }
+    .more-slider {
+        max-width: 300px;
+    }
+    .more-slider .slick-prev {
+        width: 35px;
+        height: 35px;
+        background-size: cover;
+        left: -25px;
+    }
+    .more-slider .slick-next {
+        width: 35px;
+        height: 35px;
+        background-size: cover;
+        right: -25px;
+    }
+    .more-item {
+        padding: 12px;
+    }
+    .more-img {
+        width: 50px;
+        margin-right: 5px;
+    }
+    .more-goods-title {
+        font-size: 14px;
+    }
+    .more-goods-descr {
+        font-size: 12px;
+    }
+    .purchase-btn{ 
+        padding: 8px 12px;
+        font-size: 18px;
+    }
+    .purchase-counter {
+        height: 37px;
+    }
+    .purchase-amount {
+        font-size: 18px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .counter-plus {
+        width: 22px;
+    }
+    .counter-minus {
+        width: 22px;
+    }
+}
+
+@media (max-width: 370px) {
+    .purchase {
+        flex-direction: column;
+        align-items: start;
+    }
+    .purchase-btn {
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 350px) {
+    .slider-cards-product1 {
+        max-width: 280px;
+    }
+    .big-slide {
+        max-width: 280px;
+    }
+    .slider-nav {
+        width: 280px;
+    }
+    .more-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .more-img {
+        width: 80px;
+        margin-bottom: 15px;
+    }
+    .more-slider {
+        max-width: 280px;
+    }
 }
