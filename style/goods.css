@@ -37,6 +37,10 @@
 .sorting-size {
     display: none;
 }
+.size-box {
+    height: 35px;
+    width: 130px;
+}
 .size-label {
     display: flex;
     margin-top: 11px;
