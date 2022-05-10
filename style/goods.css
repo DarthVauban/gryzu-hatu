@@ -23,6 +23,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 50px;
+    justify-content: space-between;
 }
 .good-title {
     margin: 0;
@@ -536,8 +537,17 @@
     .more-img {
         width: 80px;
         margin-bottom: 15px;
+        padding: 0;
     }
     .more-slider {
         max-width: 280px;
+    }
+    .email-input {
+        max-width: 120px;
+    }
+}
+@media (max-width: 321px) {
+    .more-slider {
+        max-width: 260px;
     }
 }

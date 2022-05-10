@@ -682,3 +682,8 @@
         width: 40px;
     }
 }
+@media (max-width: 350px) {
+    .email-input {
+        max-width: 120px;
+    }
+}

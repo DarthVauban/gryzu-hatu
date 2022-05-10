@@ -30,3 +30,9 @@
     flex-direction: row;
     justify-content: space-between;
 }
+@media (max-width: 425px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
