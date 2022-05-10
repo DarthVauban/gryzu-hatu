@@ -37,10 +37,6 @@
 .sorting-size {
     display: none;
 }
-.size-box {
-    height: 35px;
-    width: 130px;
-}
 .size-label {
     display: flex;
     margin-top: 11px;
@@ -410,6 +406,10 @@
     .payment-info {
         margin-right: 10px;
     }
+    .size-box {
+        height: 35px;
+        width: 130px;
+    }
 }
 @media (max-width: 900px) {
     .goods-content {
@@ -437,6 +437,10 @@
     .payment-info {
         margin: 0;
     }
+    .size-box {
+        height: 35px;
+        width: 130px;
+    }
 }
 @media (max-width: 620px) {
     .more-slider {
@@ -452,7 +456,10 @@
         width: 35px;
         height: 35px;
         background-size: cover;
-
+    }
+    .size-box {
+        height: 35px;
+        width: 130px;
     }
 }
 
@@ -512,6 +519,10 @@
     .counter-minus {
         width: 22px;
     }
+    .size-box {
+        height: 35px;
+        width: 130px;
+    }
 }
 
 @media (max-width: 370px) {
@@ -548,6 +559,10 @@
     }
     .email-input {
         max-width: 120px;
+    }
+    .size-box {
+        height: 35px;
+        width: 130px;
     }
 }
 @media (max-width: 321px) {
