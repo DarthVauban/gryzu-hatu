@@ -420,9 +420,6 @@
      {
         max-width: 630px;
     }
-    .main-screen-img {
-        width: 100%;
-    }
 }
 @media (max-width: 769px) {
     .slider-cards,
