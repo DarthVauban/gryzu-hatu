@@ -1,6 +1,3 @@
-body {
-    background-color: #dedede;
-}
 .cart-container {
     display: flex;
     flex-direction: column;
@@ -11,6 +8,7 @@ body {
     border-radius: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
+
 }
 .cart-header {
     display: flex;
