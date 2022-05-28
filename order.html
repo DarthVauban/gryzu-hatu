@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/order.css">
+    <title>Оформлення замовлення</title>
+</head>
+<body>
+    <header class="header">
+        <!-- Mobile header -->
+        <div class="mobile-header">
+            <div class="container">
+                <div class="header-content mobile_content">
+                    <img src="./img/logo.svg" alt="" class="mobile-logo">
+                    <p class="mobile-header-title">Гризу хату</p>
+                    <img src="./img/menu-icon.svg" alt="" class="menu-icon">
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <div class="open-menu-header">
+                    <img src="./img/logo.svg" alt="" class="mobile-logo">
+                    <p class="mobile-header-title">Гризу хату</p>
+                </div>
+                <nav class="mobile-menu-items">
+                    <a href="" class="menu-item">Головна</a>
+                    <a href="" class="menu-item">Про нас</a>
+                    <a href="" class="menu-item">Каталог</a>
+                    <a href="" class="menu-item">Контакти</a>
+                </nav>
+                <div class="mobile-card">
+                    <p class="mobile-card-title">Кошик</p>
+                    <img src="./img/card.svg" alt="" class="card-icon">
+                </div>
+                <div class="contacts">
+                    <a href="tel:0984625182" class="phone">098 462 51 82</a>
+                    <a href="tel:0984625182" class="phone">098 462 51 82</a>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile header -->
+        <div class="container">
+            <div class="header-content">
+                <a href="">
+                    <img src="./img/logo.svg" alt="" class="logo">
+                </a>
+                <nav class="nav-bar">
+                    <a href="" class="menu-item">Головна</a>
+                    <a href="" class="menu-item">Про нас</a>
+                    <a href="/catalog.html" class="menu-item">Каталог</a>
+                    <a href="" class="menu-item">Контакти</a>
+                </nav>
+                <div class="right-side">
+                    <div class="contacts">
+                        <a href="tel:0984625182" class="phone">098 462 51 82</a>
+                        <a href="tel:0984625182" class="phone">098 462 51 82</a>
+                    </div>
+                    <img src="./img/card.svg" alt="" class="card">
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu-overlay"></div>
+    </header>
+    
+    <section class="order-content">
+        <div class="container">
+            <div class="delivary-form">
+                <div class="form-container">
+                    <p class="paymetn-title">Оплата</p>
+                    <div class="payments-buttons">
+                        <button class="cash-pay-btn cash-pay-btn_active">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="cash-icon">
+                            <path d="M30 37.5C31.9891 37.5 33.8968 36.7098 35.3033 35.3033C36.7098 33.8968 37.5 31.9891 37.5 30C37.5 28.0109 36.7098 26.1032 35.3033 24.6967C33.8968 23.2902 31.9891 22.5 30 22.5C28.0109 22.5 26.1032 23.2902 24.6967 24.6967C23.2902 26.1032 22.5 28.0109 22.5 30C22.5 31.9891 23.2902 33.8968 24.6967 35.3033C26.1032 36.7098 28.0109 37.5 30 37.5Z" fill="#CFF69B"/>
+                            <path d="M0 15C0 14.0054 0.395088 13.0516 1.09835 12.3483C1.80161 11.6451 2.75544 11.25 3.75 11.25H56.25C57.2446 11.25 58.1984 11.6451 58.9016 12.3483C59.6049 13.0516 60 14.0054 60 15V45C60 45.9946 59.6049 46.9484 58.9016 47.6516C58.1984 48.3549 57.2446 48.75 56.25 48.75H3.75C2.75544 48.75 1.80161 48.3549 1.09835 47.6516C0.395088 46.9484 0 45.9946 0 45V15ZM11.25 15C11.25 16.9891 10.4598 18.8968 9.0533 20.3033C7.64678 21.7098 5.73912 22.5 3.75 22.5V37.5C5.73912 37.5 7.64678 38.2902 9.0533 39.6967C10.4598 41.1032 11.25 43.0109 11.25 45H48.75C48.75 43.0109 49.5402 41.1032 50.9467 39.6967C52.3532 38.2902 54.2609 37.5 56.25 37.5V22.5C54.2609 22.5 52.3532 21.7098 50.9467 20.3033C49.5402 18.8968 48.75 16.9891 48.75 15H11.25Z" fill="#CFF69B"/>
+                            </svg>
+                            Часткова оплата
+                        </button>
+                        <button class="cash-pay-btn card-pay-btn">
+                            <svg width="66" height="60" viewBox="0 0 66 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="cash-icon">
+                            <path d="M2.03125 45C2.03125 47.0625 3.85981 48.75 6.09472 48.75H58.9198C61.1547 48.75 62.9833 47.0625 62.9833 45V22.5H2.03125V45ZM8.12645 35.625H32.5073C33.6288 35.625 34.539 36.465 34.539 37.5C34.539 38.535 33.6288 39.375 32.5073 39.375H8.12645C7.00493 39.375 6.09472 38.535 6.09472 37.5C6.09472 36.465 7.00493 35.625 8.12645 35.625ZM8.12645 41.25H18.2851C19.4066 41.25 20.3169 42.09 20.3169 43.125C20.3169 44.16 19.4066 45 18.2851 45H8.12645C7.00493 45 6.09472 44.16 6.09472 43.125C6.09472 42.09 7.00493 41.25 8.12645 41.25ZM62.9833 15V16.875H2.03125V15C2.03125 12.9375 3.85981 11.25 6.09472 11.25H58.9198C61.1547 11.25 62.9833 12.9375 62.9833 15Z" fill="#9D8B77"/>
+                            </svg>
+                            Оплата карткою
+                        </button>
+                    </div>
+                    <p class="paymetn-title">Інформація про доставку</p>
+                    <div class="order-form">
+                        <div class="user-info">
+                            <div class="name__input">
+                                <p class="input-title">Ім'я</p>
+                                <input type="text" class="order-form__input">
+                            </div>
+                            <div class="last-name__input">
+                                <p class="input-title">Прізвище</p>
+                                <input type="text" class="order-form__input">
+                            </div>
+                        </div>
+                        <div class="user-info">
+                            <div class="name__input">
+                                <p class="input-title">Електронна адреса</p>
+                                <input type="email" class="order-form__input">
+                            </div>
+                            <div class="last-name__input">
+                                <p class="input-title">Номер телефону</p>
+                                <input type="tel" class="order-form__input">
+                            </div>
+                        </div>
+                        <div class="user-info">
+                            <div class="name__input">
+                                <p class="input-title">Місто доставки</p>
+                                <input type="text" class="order-form__input">
+                            </div>
+                            <div class="last-name__input">
+                                <p class="input-title">№ Відділення нової пошти</p>
+                                <input type="text" class="order-form__input">
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="name__input">
+                                <p class="input-title">Коментар до замовлення</p>
+                                <textarea name="" id="" cols="10" rows="8" class="order-commetn"></textarea>
+                            </div>
+                        </div>
+                        <button class="confirm-order">Замовити</button>
+                    </div>
+                </div>
+            </div>
+            <div class="small-cart">
+                <div class="order-item">
+                    <!-- <img src="./img/card-photo.png" alt="" class="order-item-photo"> -->
+                </div>
+                <div class="order-item">
+                    <!-- <img src="./img/card-photo.png" alt="" class="order-item-photo"> -->
+                </div>
+                <div class="order-item">
+                    <!-- <img src="./img/card-photo.png" alt="" class="order-item-photo"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="links-list">
+                        <p class="link-title">Про компанію</p>
+                        <a href="" class="footer-link">Про нас</a>
+                        <a href="" class="footer-link">Відгуки</a>
+                        <a href="" class="footer-link">Співпраця</a>
+                    </div>
+                    <div class="links-list">
+                        <p class="link-title">Інформація</p>
+                        <a href="" class="footer-link">Оплата та доставка</a>
+                        <a href="" class="footer-link">Повернення товарів</a>
+                        <a href="" class="footer-link">Політика конфіденційності</a>
+                    </div>
+                    <div class="links-list">
+                        <p class="link-title">Контакти</p>
+                        <a href="tel:+3800984625182" class="footer-link">+380 (098)-462-51-82</a>
+                        <a href="" class="footer-link">hryzukhatu@gmail.com</a>
+                    </div>
+                </div>
+                <div class="subscribe-form">
+                    <p class="form-title">Підпишіться на нашу розсилку</p>
+                    <div class="email-form">
+                        <input type="email" class="email-input" placeholder="Ваш E-mail">
+                        <button class="subscribe-btn">Підписатись</button>
+                    </div>
+                    <div class="social-icons">
+                        <img src="./img/instagram.svg" alt="" class="insta-icon">
+                        <img src="./img/facebook.svg" alt="" class="facebok-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/order.js"></script>
+</body>
+</html>
