@@ -143,21 +143,25 @@
     flex-direction: column;
     max-width: 410px;
     width: 100%;
+    max-height: 825px;
     border-left:2px solid #827261;
     padding-left: 25px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+   
 }
-.small-cart::-webkit-scrollbar {
+.order-items::-webkit-scrollbar {
     width: 5px; /* ширина для вертикального скролла */
     height: 5px; /* высота для горизонтального скролла */
     background-color: #827261;
 }
 
 /* ползунок скроллбара */
-.small-cart::-webkit-scrollbar-thumb {
+.order-items::-webkit-scrollbar-thumb {
     background-color: #CFF69B;
     border-radius: 9em;
+}
+.order-items {
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .order-item {
     display: flex;
@@ -190,6 +194,7 @@
     font-weight: 700;
     color: #9D8B77;
     margin: 0;
+    margin-bottom: 15px;
 }
 .item-coutn-price {
     display: flex;
@@ -222,4 +227,18 @@
     margin-left: auto;
     padding: 10px 10px 0px 0px;
     cursor: pointer;
+}
+.total {
+    display: flex;
+    justify-content: space-between;
+    background-color: #9D8B77;
+    padding: 18px 27px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.total-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #CFF69B;
+    margin: 0;
 }
