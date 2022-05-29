@@ -144,8 +144,8 @@
     max-width: 410px;
     width: 100%;
     max-height: 825px;
-    border-left:2px solid #827261;
-    padding-left: 25px;
+    /* border-left:2px solid #827261; */
+    /* padding-left: 25px; */
    
 }
 .order-items::-webkit-scrollbar {
@@ -162,6 +162,9 @@
 .order-items {
     overflow-y: scroll;
     overflow-x: hidden;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-left:2px solid #827261;
 }
 .order-item {
     display: flex;
@@ -169,7 +172,7 @@
     flex-direction: column;
     background-color: #F7F6F0;
     border-radius: 10px;
-    max-width: 380px;
+    /* max-width: 470px; */
     width: 100%;
     justify-content: space-between;
     margin-bottom: 20px;
